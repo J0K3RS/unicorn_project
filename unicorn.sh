@@ -81,6 +81,8 @@ read confirm
 echo $confirm
 if [ $confirm = "y" ]; then
 echo "Melakukan scanning"
+rm -rf android
+rm -rf dcim
 i=0
 max=100
 while [ $i -le $max ]; do
